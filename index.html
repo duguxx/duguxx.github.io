@@ -1,41 +1,557 @@
----
-layout: page
-description: "陈素封"
----
+<!DOCTYPE html>
+<html>
+<head>
+	<title>独孤潇曦_个人博客_文章列表</title>
+	
+  <meta name="description" content="刘阳的个人博客网站，用于记录学习和生活的心得。技术博客用于记录 Web技术的学习和使用心得" />
+  <meta name="keywords" content="刘阳,个人博客,编程" />
 
-{% for post in paginator.posts %}
-<div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">            
-            {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
-        <div class="post-content-preview">
-            {{ post.content | strip_html | truncate:150 }}
-        </div>
-    </a>
-    <p class="post-meta">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
+	<meta name="robots" content="index,follow" />
+	<meta name="author" content="刘阳" />
+	<meta http-equiv="content-Type" content="text/html;charset=utf8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />  
+	<meta name="baidu-site-verification" content="lplLbq63Lo" />
+
+
+
+	<link rel="icon" href="favicon.ico" >
+	<link rel="stylesheet" href="1.css" type="text/css" />
+
+
+
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="topnavibar">
+    <div id="search">
+        <script type="text/javascript">(function () {
+            document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));
+            var bdcs = document.createElement('script');
+            bdcs.type = 'text/javascript';
+            bdcs.async = true;
+            bdcs.src = '2.js?sid=13203014471358060036' + '&plate_url=' + encodeURIComponent(window.location.href) + '&t=' + Math.ceil(new Date() / 3600000);
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(bdcs, s);
+        })();</script>
+    </div>
+
+    <div class="navbar-header">
+        <a href="/"><h1 class="h1_logo"><img src="logo.png" id="logo"/></h1></a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+
+    <div class="collapse navbar-collapse">
+
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="/"><span class="glyphicon glyphicon-home">
+            
+            </span>
+            &nbsp;首页</a></li>
+            <li class="dropdown-inverse">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span
+                        class="glyphicon glyphicon-pencil"></span>&nbsp;博客<b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="/geek"><span class="glyphicon glyphicon-link"></span>&nbsp;技术博客</a></li>
+                    <li><a href="/essay"><span class="glyphicon glyphicon-book"></span>&nbsp;随笔</a></li>
+                    <li><a href="/joke"><span class="glyphicon glyphicon-comment"></span>&nbsp;瞎扯</a></li>
+                </ul>
+            </li>
+            <li><a href="/profile"><span class="glyphicon glyphicon-user"></span>&nbsp;Profile</a></li>
+            <li><a href="/feed/main.xml"><span class="glyphicon glyphicon-bookmark"></span>&nbsp;RSS</a></li>
+            <li><a href="/admin"><span class="glyphicon glyphicon-cog"></span>&nbsp;管理</a></li>
+    </div>
+</nav>
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-10 col-md-offset-1 col-sm-12 remove_padding">
+
+				<div id="head_img">
+					<img src="banner.jpg"/>
+				</div>
+			</div>
+		</div>
+		
+		<!-- <div class="row">
+			<div class="col-lg-12 col-md-10 col-md-offset-1 col-sm-12 hidden-xs remove_padding">
+				
+	<nav class="navbar navbar-inverse" role="navigation" id="navibar">
+   <div>
+      <ul class="nav navbar-nav">
+         <li class="active"><a href="/">首页</a></li>
+         <li><a href="/geek">技术博客</a></li>
+         <li><a href="/essay">随笔</a></li>
+         <li><a href="/joke">瞎扯</a></li>
+      </ul>
+   </div>
+</nav>
+
+			</div>
+		</div> -->
+
+		
+
+
+		<div class="row">
+			<div class="col-lg-8 col-md-7 col-md-offset-1  col-sm-8 remove_padding">
+
+				<div id="timeline">
+<a href="/blog_detail/blog_19/" target=_blank>
+	<div class="blog_list">
+		<span class="label label-primary">运维</span>
+		<div class="blog_title">
+			<h2>
+				【运维填坑】高并发下如何用HashMap搞挂一台服务器
+			</h2>
+			<p>2016-11-28 01:05:16&nbsp;&nbsp;阅读量: 1&nbsp;&nbsp;</p>
+		</div>
+			
+			<div class="blog_img">
+				<!-- <img src="http://7xjl4w.com1.z0.glb.clouddn.com/20130113183425271_7075.jpg" /> -->
+			</div>
+	</div>
+</a>	
+		
+
+
+
+
+<a href="/blog_detail/blog_18/" target=_blank>
+	<div class="blog_list">
+		<span class="label label-primary">运维</span>
+		<div class="blog_title">
+			<h2>
+				bash for windows初体验
+			</h2>
+			<p>2016-08-06 17:25:07&nbsp;&nbsp;阅读量: 922&nbsp;&nbsp;</p>
+		</div>
+			
+			<div class="blog_img">
+				<img src="http://7xjl4w.com1.z0.glb.clouddn.com/11.jpg" />
+			</div>
+	</div>
+</a>	
+		
+
+
+
+
+<a href="/blog_detail/blog_17/" target=_blank>
+	<div class="blog_list">
+		<span class="label label-primary">开发</span>
+		<div class="blog_title">
+			<h2>
+				【用python搞个大新闻】尝试分析wikileaks泄露的民主党邮件--信息提取、入库
+			</h2>
+			<p>2016-08-02 20:07:07&nbsp;&nbsp;阅读量: 823&nbsp;&nbsp;</p>
+		</div>
+			
+			<div class="blog_img">
+				<img src="http://7xjl4w.com1.z0.glb.clouddn.com/ec2ff5c51c7be48b2be66e70235fa54d.jpeg" />
+			</div>
+	</div>
+</a>	
+		
+
+
+
+
+<a href="/blog_detail/blog_14/" target=_blank>
+	<div class="blog_list">
+		<span class="label label-primary">瞎扯</span>
+		<div class="blog_title">
+			<h2>
+				校招中的那些信息不对称
+			</h2>
+			<p>2015-11-04 20:12:16&nbsp;&nbsp;阅读量: 982&nbsp;&nbsp;</p>
+		</div>
+			
+			<div class="blog_img">
+				<img src="http://7xjl4w.com1.z0.glb.clouddn.com/offer/offer.jpg" />
+			</div>
+	</div>
+</a>	
+		
+
+
+
+
+<a href="/blog_detail/blog_13/" target=_blank>
+	<div class="blog_list">
+		<span class="label label-primary">运动</span>
+		<div class="blog_title">
+			<h2>
+				罗杰斯们终究不是冠军教练
+			</h2>
+			<p>2015-10-05 16:06:45&nbsp;&nbsp;阅读量: 499&nbsp;&nbsp;</p>
+		</div>
+			
+			<div class="blog_img">
+				<img src="http://7xjl4w.com1.z0.glb.clouddn.com/rogers/sVw3-fximeyv2769819.jpg" />
+			</div>
+	</div>
+</a>	
+		
+
+
+
+
+<a href="/blog_detail/blog_12/" target=_blank>
+	<div class="blog_list">
+		<span class="label label-primary">Web</span>
+		<div class="blog_title">
+			<h2>
+				HTTP中的缓存控制
+			</h2>
+			<p>2015-07-24 16:33:41&nbsp;&nbsp;阅读量: 774&nbsp;&nbsp;</p>
+		</div>
+			
+			<div class="blog_img">
+				<img src="http://7xjl4w.com1.z0.glb.clouddn.com/cache/cache.jpg" />
+			</div>
+	</div>
+</a>	
+		
+
+
+
+
+<a href="/blog_detail/blog_10/" target=_blank>
+	<div class="blog_list">
+		<span class="label label-primary">瞎扯</span>
+		<div class="blog_title">
+			<h2>
+				Full Stack的艰辛路
+			</h2>
+			<p>2015-07-06 21:59:37&nbsp;&nbsp;阅读量: 668&nbsp;&nbsp;</p>
+		</div>
+			
+			<div class="blog_img">
+				<img src="http://7xjl4w.com1.z0.glb.clouddn.com/fullstack/fullstack.jpg" />
+			</div>
+	</div>
+</a>	
+		
+
+
+
+
+<a href="/blog_detail/blog_9/" target=_blank>
+	<div class="blog_list">
+		<span class="label label-primary">Web</span>
+		<div class="blog_title">
+			<h2>
+				网站优化：用nginx的gzip压缩静态文件，让网站访问快得飞起
+			</h2>
+			<p>2015-07-05 14:17:21&nbsp;&nbsp;阅读量: 1152&nbsp;&nbsp;</p>
+		</div>
+			
+			<div class="blog_img">
+				<img src="http://7xjl4w.com1.z0.glb.clouddn.com/gzipgzip.jpg" />
+			</div>
+	</div>
+</a>	
+		
+
+
+
+
+<a href="/blog_detail/blog_8/" target=_blank>
+	<div class="blog_list">
+		<span class="label label-primary">影评</span>
+		<div class="blog_title">
+			<h2>
+				互联网之子：又一个开了上帝视角的理想主义者
+			</h2>
+			<p>2015-07-02 09:56:27&nbsp;&nbsp;阅读量: 741&nbsp;&nbsp;</p>
+		</div>
+			
+			<div class="blog_img">
+				<img src="http://7xjl4w.com1.z0.glb.clouddn.com/aaron2186607631.jpg" />
+			</div>
+	</div>
+</a>	
+		
+
+
+
+
+<a href="/blog_detail/blog_7/" target=_blank>
+	<div class="blog_list">
+		<span class="label label-primary">Web</span>
+		<div class="blog_title">
+			<h2>
+				Bootstrap 网格Padding超出页面的Bug Fix（一次痛苦的Debug经历）
+			</h2>
+			<p>2015-06-28 16:28:42&nbsp;&nbsp;阅读量: 1534&nbsp;&nbsp;</p>
+		</div>
+			
+			<div class="blog_img">
+				<img src="http://7xjl4w.com1.z0.glb.clouddn.com/debug75G58PICpwQ_1024.jpg" />
+			</div>
+	</div>
+</a>	
+		
+
+
+
+
+
+
+<!-- 
+	<ul class="pagination">
+
+	
+		<li class="active"><a>&laquo;</a></li>
+	
+
+	
+      
+     	 <li class="active"><a>1</a></li>
+      
+    
+      
+      	<li><a href="?page=2" title="第2页">2</a><li>
+      
+    
+
+	
+    	<li><a href="?page=2">&raquo;</a></li>
+    
+	</ul> -->
+
+
+
+
+
+
+			     
+
+			     
+
+				</div>
+			</div>
+		
+			<div class="col-lg-4 col-md-3 col-sm-4 remove_padding">
+				
+				<div id="right_column">
+
+					<div id="latest">
+						<h4><span class="glyphicon glyphicon-time"></span>&nbsp;最近文章</h4>
+						<hr class="right_hr"/>
+						<ol>
+							
+	
+	<li><a href="/blog_detail/blog_19/ " target=_blank>【运维填坑】高并发下如何用HashMap搞挂一台服务器</a></li>
+	
+	<li><a href="/blog_detail/blog_18/ " target=_blank>bash for windows初体验</a></li>
+	
+	<li><a href="/blog_detail/blog_17/ " target=_blank>【用python搞个大新闻】尝试分析wikileaks泄露的民主党邮件--信息提取、入库</a></li>
+	
+	<li><a href="/blog_detail/blog_14/ " target=_blank>校招中的那些信息不对称</a></li>
+	
+	<li><a href="/blog_detail/blog_13/ " target=_blank>罗杰斯们终究不是冠军教练</a></li>
+	
+	<li><a href="/blog_detail/blog_12/ " target=_blank>HTTP中的缓存控制</a></li>
+	
+	<li><a href="/blog_detail/blog_10/ " target=_blank>Full Stack的艰辛路</a></li>
+	
+	<li><a href="/blog_detail/blog_9/ " target=_blank>网站优化：用nginx的gzip压缩静态文件，让网站访问快得飞起</a></li>
+	
+
+						</ol>
+					</div>
+							
+					<div id="tags">	
+						<h4><span class="glyphicon glyphicon-tags"></span>&nbsp;&nbsp;标签</h4>
+						<hr class="right_hr" />
+						 
+   	<h5>
+         
+
+   		<a href="/tag_24/">
+   			<span class="label label-default">运维</span>&nbsp;&nbsp;
+   		</a>
+
+   
+
+   		<a href="/tag_23/">
+   			<span class="label label-default">Java</span>&nbsp;&nbsp;
+   		</a>
+
+   
+
+   		<a href="/tag_22/">
+   			<span class="label label-default">windows</span>&nbsp;&nbsp;
+   		</a>
+
+   
+
+   		<a href="/tag_21/">
+   			<span class="label label-default">Bash</span>&nbsp;&nbsp;
+   		</a>
+
+   
+
+   		<a href="/tag_20/">
+   			<span class="label label-default">数据挖掘</span>&nbsp;&nbsp;
+   		</a>
+
+   
+
+   		<a href="/tag_19/">
+   			<span class="label label-default">信息不对称</span>&nbsp;&nbsp;
+   		</a>
+
+   
+
+   		<a href="/tag_18/">
+   			<span class="label label-default">Offer</span>&nbsp;&nbsp;
+   		</a>
+
+   
+
+   		<a href="/tag_17/">
+   			<span class="label label-default">利物浦</span>&nbsp;&nbsp;
+   		</a>
+
+   
+
+   		<a href="/tag_16/">
+   			<span class="label label-default">英超</span>&nbsp;&nbsp;
+   		</a>
+
+   
+
+   		<a href="/tag_15/">
+   			<span class="label label-default">HTTP</span>&nbsp;&nbsp;
+   		</a>
+
+   
+
+   		<a href="/tag_14/">
+   			<span class="label label-default">优化</span>&nbsp;&nbsp;
+   		</a>
+
+   
+
+   		<a href="/tag_13/">
+   			<span class="label label-default">nginx</span>&nbsp;&nbsp;
+   		</a>
+
+   
+
+   		<a href="/tag_12/">
+   			<span class="label label-default">理想主义者</span>&nbsp;&nbsp;
+   		</a>
+
+   
+
+   		<a href="/tag_11/">
+   			<span class="label label-default">影评</span>&nbsp;&nbsp;
+   		</a>
+
+   
+
+   		<a href="/tag_10/">
+   			<span class="label label-default">Debug</span>&nbsp;&nbsp;
+   		</a>
+
+   
+
+   		<a href="/tag_9/">
+   			<span class="label label-default">Bootstrap</span>&nbsp;&nbsp;
+   		</a>
+
+   
+
+   		<a href="/tag_8/">
+   			<span class="label label-default">移动设备</span>&nbsp;&nbsp;
+   		</a>
+
+   
+
+   		<a href="/tag_7/">
+   			<span class="label label-default">网站</span>&nbsp;&nbsp;
+   		</a>
+
+   
+
+   		<a href="/tag_6/">
+   			<span class="label label-default">响应式设计</span>&nbsp;&nbsp;
+   		</a>
+
+   
+
+   		<a href="/tag_4/">
+   			<span class="label label-default">造轮子</span>&nbsp;&nbsp;
+   		</a>
+
+   
+
+   		<a href="/tag_2/">
+   			<span class="label label-default">Django</span>&nbsp;&nbsp;
+   		</a>
+
+   
+
+   		<a href="/tag_1/">
+   			<span class="label label-default">Python</span>&nbsp;&nbsp;
+   		</a>
+
+   
+   </h5>
+
+									
+					</div>
+
+					<!-- <div id="friends">	
+						<h4><span class="glyphicon glyphicon-heart-empty"></span>&nbsp;友情链接</h4>
+						<hr class="right_hr"/>
+						 -->
+  
+
+	
+
+</ul>       
+
+
+									
+					</div>		
+				</div>					
+			</div>
+		</div>
+	
+		<div class="row">
+				<div class="col-lg-12 col-md-10 col-md-offset-1 col-sm-12 hidden-xs remove_padding">
+					<div id="footer">
+	<hr>
+	<ul class="list-inline">
+		<li>Powered by:  <a href="http://www.djangoproject.com/" target="_blank">Django</a></li>
+		<li><a href="http://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+		<li><a href="http://aws.amazon.com/" target="_blank">AWS</a></li>
+		<li><a href="http://glyphicons.com/" target="_blank">Glyphicons Halflings</a></li>
+	</ul>
+	<ul class="list-inline">
+		<li><a href="http://weibo.com/hill830075" target="_blank">新浪微博: @刘文图熙1895</a></li>
+		<li><a href="http://www.zhihu.com/people/hill1895" target="_blank">知乎: 刘文图熙1895</a></li>
+		<li><a href="https://github.com/hill1895" target="_blank">GitHub: hill1895</a></li>
+	</ul>
 </div>
+				</div>
+		</div>
+	
+	</div>
 
-<hr>
-{% endfor %}
+	<div id="return_top" class="hidden-sm hidden-xs"><a href="#"><img src="return_top.png" /></a>
+	</div>
 
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-<ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-    </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-    </li>
-    {% endif %}
-</ul>
-{% endif %}
+	<script type="text/javascript" src="1.js"></script>
+
+</body>
+</html>
